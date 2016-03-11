@@ -1,0 +1,242 @@
+body {
+	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
+	background-image: linear-gradient(270deg, rgba(124,178,40,0.9) 0%,rgba(80,179,226,0.9) 100%); background-color: #000000;
+	background-size: cover;
+}
+header {
+	background-color: white;
+	height: 75px;
+	position: fixed;
+	width: 100%;
+	top: 80%;
+	opacity:0.5;
+	z-index: 1;
+}
+#name {
+	/*filter: invert(100%);
+	-webkit-filter: invert(100%);*/
+	margin-bottom: -25px;
+	float:right;
+	height: 90px;
+}
+#nav {
+	float: right;
+	margin: 50px 45px -5px 0px;
+	top: 80%;
+	position: fixed;
+	z-index: 2;
+}
+.navlink {
+	color: black;
+	margin-left: 20px;
+}
+.portpage header {
+	top: 0;
+	opacity: 1;
+	background-color: black;
+}
+.portpage #nav {
+	top: 0;
+}
+.portpage .navlink {
+	color: white;
+}
+#container{
+	width: 88%;
+	margin:65px auto;
+	overflow: auto;
+}
+a {
+	text-decoration:none;
+	color: #3299CC;
+	font-weight:bold;
+	cursor: pointer;
+}
+a:hover {
+	color: black;
+}
+.wrap {
+	display: none;
+}
+.wrap{
+	font-size:13px;
+	line-height:26px;
+	background-color: white;
+	opacity: 0.8;
+	overflow: auto;
+	padding: 3%;
+	border-radius: 8px;
+	margin: 0px auto;
+}
+h2 {
+	text-align: center;
+}
+.icon {
+	background-repeat: no-repeat;
+	height: 24px;
+	width: 24px;
+	display: inline-block;
+	float: left;
+	margin-right: 5px;
+}
+#tel {
+	background-image: url("http://masechoi.com/images/glyphicons_441_phone_alt.png");
+}
+#mail {
+	background-image: url("http://masechoi.com/images/glyphicons_120_message_full.png");
+	height: 30px;
+	margin-top: -4px;
+}
+p {
+	margin-top: 0px;
+}
+.about-divs p {
+	float:right;
+	width: 91%;
+}
+.button {
+	background-color: black;
+	padding:20px 25px;
+	font-weight:bold;
+	text-shadow: 1px 1px 1px #aaa;
+	cursor: pointer;
+	color: white;
+	font-size: 12px;
+	border:none;
+}
+button {
+	margin-right: 5px;
+	opacity: 1;
+}
+ul{
+	list-style: none;
+	float:right;
+}
+li{
+	float:left;
+}
+#worksection .button {
+	opacity: 0.8;
+}
+.button:hover {
+	background: whitesmoke;
+ 	color: #333;
+}
+.button:focus {
+	outline: none;
+}
+#worksection .button:first-child {
+	margin-left: 0px;
+}
+#worksection .button.active {
+	background-color: whitesmoke;
+	text-shadow: 1px 1px whitesmoke, -1px -0px #ccc;
+	color: #333;
+}
+.portfolio-item {
+	width:182px;
+	text-align:center;
+	float:left;
+	/*margin: 0 25px 14px 7px;
+	padding: 5px;*/
+	padding-bottom: 15px;
+}
+#worksection .clear {
+	margin-bottom: 30px;
+}
+.portfolio-item img {
+	/*border: 5px solid white;*/
+	font-size: 13px;
+	color: black;
+	font-weight: normal;
+}
+p.title {
+	width: 183px; 
+	height: 29px;
+	text-decoration: none;
+	color: white;
+	text-align:center;
+	padding: 10px 0px;
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight: 900;
+}
+#lightbox-content {
+	position:absolute;
+	top:25%;
+	left:25%;
+	width:50%;
+	height:50%;
+	padding:16px;
+	border-radius: 5px;
+	background-color:black;
+	z-index:1002;
+	overflow:auto;
+}
+#contactsection {
+	width: 178px;
+	margin-top: 90px;
+}
+#contactsection p {
+	margin-bottom: 0;
+}
+footer{
+	font-size:10px;
+	position: fixed;
+	top: 90%; 
+	right: -20%;
+}
+.foot{
+	float: left;
+	padding-top: 25px;
+	font-size: 10px;
+	font-weight: bold;
+	text-shadow: 1px 1px #ccc;
+}
+.social{
+	height:50px;
+}
+#aboutpic {
+	float:left;
+	height: 197px;
+	margin-top:21px;
+	margin-right:15px;
+	border: 5px solid white;
+}
+img .contact {
+	margin-right:2px;
+}
+#socialfoot {
+	padding-left: 0px;
+	width: 519px;
+}
+#email {
+	margin-bottom: 20px;
+}
+.clear {
+	clear: both;
+	margin-bottom: 16px;
+}
+.hover-img {
+	border: 5px solid #3299cc;
+}
+.hover-p {
+	color: #3299cc;
+}
+#back {
+	color: white;
+	position: fixed;
+	bottom: 20px;
+	font-size: 12px;
+	left: 20px;
+	font-weight: 900;
+}
+#sidebar {
+	position: fixed;
+	top: 6%;
+}
+.portwrap {
+	margin-left: 300px;
+	min-width: 550px;
+}

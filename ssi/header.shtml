@@ -1,0 +1,12 @@
+		<header>
+			<a href="/"><img class="logo" src="css/images/melissa-choi.png"/></a>
+			<nav>
+				<ul>
+					<li class="works"><a href="/works.shtml">Work</a></li>
+					<li class="photographs"><a href="/photographs.shtml">Photographs</a></li>
+					<!--<li><a href="">Thoughts</a></li>-->
+					<li class="about"><a href="/about.shtml">About</a></li>
+					<li class="contact"><a href="/contact.shtml">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
