@@ -6,15 +6,18 @@
 		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
 		<link href="css/style2.css" rel="stylesheet"/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js/script.js" type="text/javascript"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	<head>
 
-	<body class="no-bg">
+	<body class="no-bg black">
 		<header>
 			<a href="/"><img class="logo" src="css/images/melissa-choi.png"/></a>
 			<nav>
 				<ul>
 					<li class="works"><a href="/work">Work</a></li>
-					<li class="photographs active"><a href="/photographs">Photographs</a></li>
+					<li class="photographs active"><a href="/photos">Photos</a></li>
 					<!--<li><a href="">Thoughts</a></li>-->
 					<li class="about"><a href="/about">About</a></li>
 					<li class="contact"><a href="/contact">Contact</a></li>
@@ -23,27 +26,45 @@
 		</header>
 		
 			<div class="feature">
-				<img src="css/images/goslow.jpg">
-				<!--<img src="https://scontent-lga1-1.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/11750703_10103400832895445_7318191752536426773_n.jpg?oh=d382f028f8f50ad2e7c3c26572cebe25&oe=56199630">-->
-				<img src="https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/915606_1503711459841372_2125965522_n.jpg">
-				<img src="css/images/fish.jpg">
-				<img src="https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11377769_836298796466451_1301256514_n.jpg">
-				<img src="https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11324937_1592937734315104_16012546_n.jpg">
-				<img src="css/images/romanescobaby.jpg">
-				<!--rotate -90><img src="css/images/_DSC0809.JPG">-->
-				<img src="https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xpf1/t51.2885-15/10890569_316343765221708_1221293715_n.jpg">
-				<img src="css/images/hues.jpg">
-				<img src="https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-15/11055543_867136383346329_1963070521_n.jpg">
-				<img src="css/images/2014-07-04 15.02.47.jpg">
-				<img src="https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-15/10597484_834187699973825_1487182848_n.jpg">
-				<!--<img src="https://scontent-lga1-1.cdninstagram.com/hphotos-xap1/t51.2885-15/928923_1554833714772928_1640595265_n.jpg">-->
-				<img src="https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xpf1/t51.2885-15/11176229_403835076465049_1389016960_n.jpg">
-				<img src="https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-15/11143059_946020748776359_1704719892_n.jpg">
-				<img src="css/images/colorfulnights.jpg">
-				<!--<img src="https://scontent-lga1-1.cdninstagram.com/hphotos-xaf1/t51.2885-15/11251221_680402595438461_387678698_n.jpg">-->
-				<img src="css/images/_DSC0795.JPG">
-				<img src="https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/10865176_384732511705031_1105367402_n.jpg">
-				<img src="https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11386560_1464913733808475_1400077549_n.jpg">
+				<img src="css/images/fish.jpg" alt="Fish Off"/>
+				<img src="css/images/goslow.jpg" alt="Go Slow"/>
+				<img src="css/images/romanescobaby.jpg" alt="Romanesco Fractals"/>
+				<img src="https://igcdn-photos-a-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11324937_1592937734315104_16012546_n.jpg" alt="Humans of SF"/>
+				<img src="https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/11377769_836298796466451_1301256514_n.jpg" alt="Central Park"/>
+				<img src="css/images/birdcage.jpg" alt="Birdcage"/>
+				<img src="css/images/vn-db.jpg" alt="Dragonboat in Vietnam"/>
+				<img src="css/images/2014-07-04 15.02.47.jpg" alt="Ice a beach"/>
+				<img src="https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/915606_1503711459841372_2125965522_n.jpg" alt="Iceland's Swan"/>
+				<img src="https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11386560_1464913733808475_1400077549_n.jpg" alt="Sunday Errands"/>
+				<img src="https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-15/10597484_834187699973825_1487182848_n.jpg" alt="Look up"/>
+				<img src="https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xfp1/t51.2885-15/11055543_867136383346329_1963070521_n.jpg" alt="Hicksville Serenity"/>
+				<img src="css/images/hues.jpg" alt="All these colors and all these hues in here, somebody here gon paint"/>
+				<img src="css/images/jason-triangles.jpg" alt="Jason's Triangles">
+				<img src="css/images/bagging-corn.jpg" alt="Bagging Corn">
+				<img src="css/images/suburban-hiking.jpg" alt="Suburban Hiking"/>
+				<img src="css/images/chicken-sticks.jpg" alt="The lady to go to for chicken sticks"/>
+				<img src="css/images/buddha.jpg" alt="A walk down"/>
+				<img src="https://igcdn-photos-e-a.akamaihd.net/hphotos-ak-xpf1/t51.2885-15/10890569_316343765221708_1221293715_n.jpg" alt="Warm up with Congee"/>
+				<!--rotate -90><img src="css/images/_DSC0809.JPG"/>-->
+				<img src="css/images/cave-dwellers.jpg" alt="Cave Dwellers">
+				<img src="css/images/_DSC0795.JPG" alt="My Instrument"/>
+				<img src="css/images/colorfulnights.jpg" alt="Light & Color"/>
+				<img src="css/images/dragon2dragon.jpg" alt="One Dragon Looking at Another Dragon">
+				<img src="css/images/danang.jpg" alt="Da Nang from above">
+				<img src="https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xfa1/t51.2885-15/10865176_384732511705031_1105367402_n.jpg" alt="Window to the Sea"/>
+				<img src="https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xpf1/t51.2885-15/11176229_403835076465049_1389016960_n.jpg" alt="Jelly fish"/>
+				<img src="https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xpa1/t51.2885-15/11143059_946020748776359_1704719892_n.jpg" alt="Mello Sunset"/>
+				<img src="css/images/colorful-scarves.jpg" alt="Color Wheel"/>
+			
+				
+
+				<!--<img src="https://scontent-lga1-1.cdninstagram.com/hphotos-xap1/t51.2885-15/928923_1554833714772928_1640595265_n.jpg"/>-->
+				
+				
+				
+				<!--<img src="https://scontent-lga1-1.cdninstagram.com/hphotos-xaf1/t51.2885-15/11251221_680402595438461_387678698_n.jpg"/>-->
+				
+				
 			</div>
 	</body>
 </html>

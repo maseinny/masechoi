@@ -5,6 +5,7 @@ header { position: fixed; width: 100%; z-index: 1000; }
 .no-bg { background: none; background-image:linear-gradient(270deg, rgba(124,178,40,0.9) 0%,rgba(80,179,226,0.9) 100%); background-color: #000000; }
 .no-bg header { position: static; }
 .no-bg .logo { margin-top:-16px; }
+.black { background-image: none; background-color: black; }
 
 nav { text-align: right; margin-right: 15px; }
 nav li { list-style-type: none; display: inline-block; font-size: 20px; margin: 20px 20px 0px; }
@@ -85,16 +86,19 @@ p.title { height: 29px; margin-bottom: 50px; }
 
 
 /*PHOTOGRAPHS*/
-.feature { background-color: black; width:auto; margin-top:150px; padding: 30px 25px; white-space: nowrap; overflow:scroll; overflow-y:hidden; }
-.feature img { height: 350px; margin: 0px 5px; }
+/*.feature { background-color: black; width:auto; margin-top:150px; padding: 30px 25px; white-space: nowrap; overflow:scroll; overflow-y:hidden; }*/
+.feature img { height: 350px; margin: 5px 5px; border: 1px solid white; position: relative; }
+.feature { padding: 30px 25px; text-align: center; }
+
+.photo-hover { position: absolute; z-index: 1000; bottom: 5px; right: 5px; }
 
 /*CONTACT*/
-.contact-content { background-color: black; opacity: 0.5; border-radius: 10px; padding: 50px; position: relative; top: 32%; left: 23%; width: 50%; text-align: center; }
+.contact-content { background-color: black; opacity: 0.5; border-radius: 10px; padding: 50px; position: relative; top: 28%; margin: 0px auto; width: 50%; text-align: center; }
 
 
 
 /* RESPONSIVE */
-@media (max-width: 835px) {
+@media screen and (max-width: 835px) {
 	header { margin-top: 16px; }
 	nav { text-align: left; clear: both; margin-left: -15px; }
 	nav li { margin: 10px 20px 0px; }
@@ -105,13 +109,26 @@ p.title { height: 29px; margin-bottom: 50px; }
 	.sidebar-mobile p { display: inline; padding: 0px 10px 0px 0px; }
 	.worksection .clear { margin-bottom: 15px; }
 	.portwrap { padding: 0px 35px; margin-left: 0; }
+
+	/* about */
+	.content { padding: 25px; line-height: 1.5em; }
+
+	/* contact */
+	.contact-content { width: 70%; }
 }
 
-@media (max-width: 610px) {
+@media screen and (max-width: 780px) {
+	.feature img { width: 100%; height: auto; }
+} 
+
+@media screen and (max-width: 610px) {
+	body { font-weight: 300; }
 	.portwrap { padding: 0; min-width: 0; }
+	.one { font-weight: 100; }
+	.contact-content { padding: 25px; }
 }
 
-@media (max-width: 546px) {
+@media screen and (max-width: 546px) {
 	nav { margin-left: 0; text-align: center; }
 	nav ul { padding: 0; }
 	nav li { margin: 10px 10px 0px; }

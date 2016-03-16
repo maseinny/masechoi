@@ -76,5 +76,17 @@ $(document).ready(function() {
 		};
 
 	});
+
+
+	//PHOTO HOVER
+	$('.feature img').hover(
+		function(){
+			var title = $(this).attr('alt');
+			$(this).append('<div class="photo-hover">' + title + '</div>');
+		},
+		function(){
+			$(this).next().remove('.photo-hover');
+		}
+	);
 	
 });
